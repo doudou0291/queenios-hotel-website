@@ -1,0 +1,599 @@
+:root{
+    --black:#212121;
+    --brown:#8C7460;
+    --biege:#F8F5EF;
+    --white:#FFFFFF;
+}
+
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6px;
+    overflow-x: hidden;
+}
+ 
+ 
+.Hero{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to top,rgba(0,0,0,0.1)50%,rgba(0,0,0,0.1)50%),
+    url("/aboutus.png") ;
+    background-size:cover;
+   background-position:center;
+   justify-content: center;
+}
+.Hero .content{
+  
+max-width: 924px;
+text-align: center;
+}
+.Hero .content h1{
+font-size: 68px;
+font-weight: 500;
+letter-spacing: -2%;
+line-height: 81px;
+text-align: center;
+color: rgba(255, 255, 255, 1);
+text-shadow: 3px 0 rgba(0,0,0,0.2);
+}
+/*about us start*/
+.aboutus{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(17rem, auto));
+    align-items: center;
+    gap: 1.5rem;
+}
+.aboutus .image { 
+    width: 100%;
+    padding-right: 64px;
+    padding-bottom: 7%;
+    padding-top: 7%;
+}
+.aboutus .image img{
+   width: 100%;
+    border-radius: 8px;
+}
+.aboutus .content{
+    
+    padding-left:5%;
+   padding-right: 5%;
+    
+   
+}
+.aboutus .content h3{
+    font-size: 67px;
+    line-height: 63px;
+    letter-spacing: -2%;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 500;
+
+}
+.aboutus .content p{
+    font-size: 24px;
+    color:  rgba(33, 33, 33, 0.68);
+    padding: .5rem 0;
+    padding-top: 7%;
+    line-height: 34px;
+    font-weight: 400;
+}
+/*icons start*/
+.icons-conta{
+    background:var(--biege);
+   /* display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;*/
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(auto,25%));
+    gap: 2rem;
+    justify-content:center;
+    padding-top:4%; 
+    padding-bottom:4%;
+    align-items: center;
+}
+    
+.icons-conta .icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-end;
+  border-right: 2px solid rgba(33, 33, 33, 0.32);
+  height: 67px;
+}
+.icons-conta .exept{
+    border-right: none;
+}
+.icons-conta .icon img{
+  width: 150px;
+}
+.icons-conta .icon img {
+  
+    transition: transform 0.2s ease-out, color 0.2s ease-out;
+  }
+  
+  .icons-conta .icon img:hover {
+    transform: scale(1.1); 
+    
+  }
+  /*mission start*/
+  .missions-conta{
+    background:rgba(42, 42, 42, 1);
+    padding-top:5%; 
+    padding-bottom:5%;
+  }
+   
+   
+  
+  .missions-conta .heading{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 56px;
+    line-height: 63px;
+    letter-spacing: -2%;
+    font-weight: 400;
+    color: var(--biege);
+    padding-top: 40px;
+    }
+  .missions-conta .missions{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(auto,23%));
+ 
+    gap: 0.5rem;
+    padding-bottom: 170px;
+   justify-content:center;
+}
+.missions-conta .missions .mission{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-end;
+  row-gap:0.5rem;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  }
+.missions-conta .missions .mission .icon img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+   }
+  .missions-conta .missions .mission:hover  {
+    transform: scale(1.1); 
+    }
+    
+  .missions-conta .missions .mission .content{
+    
+    justify-content: center;
+     border-right: 2px solid rgba(140, 116, 96, 0.64);
+    height: 64px;
+    padding: 0px 20px;
+    margin-top: 2px;
+    text-align: center;
+  }
+  .missions-conta .missions .mission .exept{
+    border-right: none;
+  }
+  
+  .missions-conta .missions .mission .content h3{
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: -2%;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom:  10px;
+    
+  }
+ .missions-conta .missions .mission .content p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:16px;
+    font-weight: 400;
+   letter-spacing: -2%;
+   line-height: 20.8px;
+   text-align: center;
+   color: rgba(255, 255, 255, 1);
+   }
+  /*mission section ends*/
+  /*expect section start*/
+  .expect{
+    padding-top: 5%;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .expect .head-conta{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem, auto));
+    align-items: center;
+    gap: 10rem;
+    margin-bottom: 5%;
+   
+    }
+  .expect .head-conta h1{
+    font-size: 56px;
+    font-weight: 500;
+    letter-spacing: -2%;
+    line-height: 67px;
+    color: var(--black);
+    
+  }
+  .expect .head-conta p{
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -2%;
+    line-height: 34px;
+    color: rgba(33, 33, 33, 0.68);
+   }
+   .expect .card-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20%,auto));
+    align-items: center;
+    gap: 2rem;
+    margin-top: 50px;
+    
+   
+  }
+  .expect .card-content .card{
+    background:var(--biege);
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+    }
+    .expect .card-content .card:hover{
+      transform: scale(0.9); 
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.6);
+    }
+
+  .expect .card-content .card img{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+  }
+  .expect .card-content .card .card-body{
+    padding-top:5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 10%;
+  
+  }
+  .expect .card-content .card .card-body h3{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -2%;
+    line-height: 20.5px;
+    color: rgba(140, 116, 96, 1);
+    padding-bottom: 10px;
+    
+  }
+  .expect .card-content .card .card-body p{
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -2%;
+    line-height: 26px;
+    color: rgba(33, 33, 33, 1);
+  }
+ .button{
+  text-align: center;
+  padding-top: 4%;
+  padding-bottom: 4%;
+ }
+  .expect .button a{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--black);
+    border: 1px solid rgba(33, 33, 33, 0.5) ;
+    padding: 20px 80px;
+    margin-top: 5x;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 21px;
+    background: transparent;
+    position: relative;
+    
+    
+    }
+    .expect .button  a:hover{
+      background:var(--brown) ;
+      color: var(--white);
+      border-color: var(--brown);
+      box-shadow: 0 0.5rem 1rem rgba(140, 116, 96, 0.5) 
+    }
+    /*find us start*/
+    
+    .findus{
+     
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(25%, auto));
+      align-items: center;
+      gap: 5rem;
+      background:var(--biege);
+  
+  }
+  
+    .findus .image img{
+     
+      border-radius: 8px;
+  }
+  .findus .content{
+    padding-right: 100px;
+    padding-left: 5%;
+  }
+  .findus .content h3{
+    
+      font-size: 67px;
+      color: rgba(0, 0, 0, 1);
+      font-weight: 500;
+  
+  }
+  .findus .content p{
+      font-size: 24px;
+      color:  rgba(33, 33, 33, 0.68);
+      font-weight: 400;
+  }
+  /*visit start*/
+  .visit{
+    margin-top: 5%;
+    padding-left: 64px;
+    padding-right: 64px;
+    
+  }
+  .visit .head-conta{
+   text-align: center;
+    }
+  .visit .head-conta h1{
+    font-size: 56px;
+    font-weight: 500;
+    letter-spacing: -2%;
+    line-height: 67px;
+    color: var(--black);
+    
+  }
+  
+   .visit .card-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25%,auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 50px;
+    
+   
+  }
+  .visit .card-content .card{
+    background:var(--biege);
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+    }
+    .visit .card-content .card:hover{
+      transform: scale(0.9); 
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.6);
+    }
+
+  .visit .card-content .card img{
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+  }
+  .visit .card-content .card .card-body{
+    padding-top:5%;
+    padding-left: 5%;
+    padding-bottom: 10%;
+  
+  }
+  .visit .card-content .card .card-body h3{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -2%;
+    line-height: 20.5px;
+    color: rgba(140, 116, 96, 1);
+    padding-bottom: 5px;
+  }
+  .visit .card-content .card .card-body p{
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -2%;
+    line-height: 26px;
+    color: rgba(33, 33, 33, 0.8);
+  }
+  /*media queries*/
+@media(max-width:991px){
+  html{
+      font-size:50% ;
+  }
+  .Hero{
+      background-position:center;
+  }
+ 
+  section{
+    padding: 2rem 0;
+  }
+ 
+  .aboutus .content h3{
+     font-size: 47px;
+      line-height: 43px;
+     }
+  .aboutus .content p{
+      font-size: 22px;
+      }
+      .findus .content{
+          padding: 0;
+      }
+      .findus .content h3{
+        font-size: 47px;
+        
+        }
+     .findus .content p{
+         font-size: 22px;
+         }
+
+  .icons-conta {
+    grid-template-columns: repeat(2,2fr);
+     }
+     .missions-conta .missions .mission .content{
+      border: none;
+    }
+    .expect .card-content{
+      
+      grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+      
+     
+    }
+    .visit .card-content{
+      grid-template-columns: repeat(auto-fit,minmax(250px,auto));        
+     
+    }
+      
+}
+
+@media(max-width:768px){
+  html{
+      font-size:50%;
+   
+     }
+     section{
+      padding: 1.5rem 0;}
+
+
+     .Hero .content h1{
+      font-size: 48px;
+      line-height: 61px;}
+      .aboutus{
+        display: block; 
+    }
+    .aboutus .image{
+      padding-left: 15%;
+      padding-right: 15%;
+      width: 100%;
+    }
+    .aboutus .content{
+    align-items: center;
+    padding-top: 15px;
+     }
+  .aboutus .content h3{
+    
+      font-size: 47px;
+      line-height: 43px;
+     }
+  .aboutus .content p{
+      font-size: 22px;
+     padding-top: 5px;
+      }
+      
+    .icons-conta {
+      grid-template-columns: repeat(3,1fr);
+       }
+    .icons-conta .icon{
+      border-right: none;
+      
+    }
+    .icons-conta .icon img{
+      width: 100px;
+    }
+    .missions-conta .missions{
+      display:grid;
+      grid-template-columns: repeat(auto-fit,minmax(auto,50%));
+   }
+    .missions-conta .missions .mission .content{
+      border: none;
+    }
+    .expect .card-content{
+      
+      grid-template-columns: repeat(auto-fit,minmax(35%,auto));
+      }
+      .expect .head-conta{
+       
+        grid-template-columns: repeat(auto-fit,minmax(auto,90%));
+        align-items: initial;
+        gap: 1rem;
+       
+        }
+      .expect .head-conta h1{
+        font-size: 40px;
+        }
+      
+
+        .findus .image{
+         
+          width: 100%;
+        }
+        .findus .content{
+        align-items: center;
+        padding-top: 15px;
+        
+         }
+      .findus .content h3{
+        
+          font-size: 47px;
+          line-height: 43px;
+         }
+      .findus .content p{
+          font-size: 22px;
+         padding-top: 5px;
+          }
+      
+    
+      .visit .head-conta h1{
+        font-size: 40px;
+        
+      }    
+      .visit .card-content{
+        grid-template-columns: repeat(auto-fit,minmax(100%,auto));        
+       
+      }
+}
+
+@media(max-width:450px){
+  html{
+      font-size: 50%;
+  }
+  section{
+    padding: 1rem 0;}
+
+  .Hero .content h1{
+      font-size: 35px;
+  }
+  .services .main .content{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  }
+  .icons-conta{
+      display: block;
+  }
+  .missions-conta{
+    display: inline;
+  }
+  .findus {
+    display: block;
+  }
+  .findus .image{
+    order: 1;
+     width: 100%;
+   }
+   .findus .content{
+   align-items: center;
+   padding-top: 15px;
+   order: 2;
+    }
+ .findus .content h3{
+   
+     font-size: 47px;
+     line-height: 43px;
+    }
+ .findus .content p{
+     font-size: 22px;
+    padding-top: 5px;
+     }
+ 
+  }
+
+  
+  
+  

@@ -1,0 +1,191 @@
+
+:root{
+    --black:#212121;
+    --brown:#8C7460;
+    --biege:#F8F5EF;
+    --white:#FFFFFF;
+}
+
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6px;
+    overflow-x: hidden;
+}
+ 
+ 
+.Hero{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to top,rgba(0,0,0,0.1)50%,rgba(0,0,0,0.1)50%),
+    url("/room-page.jpg") ;
+    background-size:cover;
+   background-position: center;
+   justify-content: center;
+}
+.Hero .content{
+    max-width: 924px;
+    text-align: center;
+    margin-top: 100px;
+    }
+     .Hero .content h1{
+    font-size: 68px;
+    font-weight: 500;
+    letter-spacing: -2%;
+    line-height:81px;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 3px 0 rgba(0,0,0,0.2);
+    }
+.rooms .main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+   }
+.rooms .main .content{
+    width: 50%;
+    float: left;
+    }
+.rooms .main .image{
+   
+    width: 50%;
+    float: right;
+    position: relative;
+    
+    
+}
+
+ .rooms .main .image img{
+    height: 60rem;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+    
+.rooms .main .content{
+    
+    padding-bottom: 40px;
+    padding-left: 2%;
+    padding-right: 2%;
+ }
+.rooms .main .content h3{
+    font-size: 45px;
+    line-height: 76px;
+    letter-spacing: -2%;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 500;
+    padding-bottom: 20px;
+    }
+    .rooms .main .content h3:hover{
+        color: var(--black);
+        transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+       text-shadow:    0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+    }
+    
+.rooms .main .content p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color:  rgba(33, 33, 33, 0.68);
+    line-height: 29px;
+    padding-bottom: 20px;
+   
+
+}
+
+.rooms .main .content a {
+display: inline-block;
+text-decoration: none;
+color: var(--black);
+border: 1px solid rgba(0, 0, 0, 0.6) ;
+padding: 10px  60px;
+margin-top: 2rem;
+font-size: 16px;
+background: transparent;
+position: relative;
+
+
+}
+.rooms .main .content a:hover{
+    background:var(--brown) ;
+    color: var(--white);
+    border-color: var(--brown);
+}
+
+
+/*media queries*/
+@media(max-width:991px){
+    html{
+        font-size:50% ;
+    }
+    .Hero{
+        background-position: left;
+    }
+
+}
+
+@media(max-width:764px){
+    html{
+     font-size:50%;
+    }
+    .Hero .content h1{
+        font-size: 6rem;
+    }
+    .rooms{
+        flex-flow:row wrap;
+    }
+
+    .rooms .main .image{
+        display: block;
+       order: 1;
+        width: 100%;
+       
+    }
+    
+    .rooms .main img{
+       border-top-right-radius: 60%;
+       border-bottom-left-radius: 60%;
+       
+    }
+    .rooms .main .content{
+        display: block;
+        order: 2;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+.rooms .main .content h3{
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: 500;
+    }
+   
+    .rooms .main .content p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+         line-height: 31px;
+         font-weight: 400;
+     
+}
+}
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .Hero .content{
+        margin-left: 0%;
+    }
+    .Hero .content h1{
+        font-size: 6rem;
+    }
+    
+    }
+
+
+
+
+
+
+
